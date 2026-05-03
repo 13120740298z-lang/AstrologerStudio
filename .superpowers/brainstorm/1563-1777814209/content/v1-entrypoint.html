@@ -1,0 +1,92 @@
+<h2>V1「综合解读」放在哪里更合适？</h2>
+<p class="subtitle">点击卡片选择一个入口（之后的页面结构、数据复用、记忆系统落点都会跟着这个决定走）</p>
+
+<div class="cards">
+  <div class="card" data-choice="new-page" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">独立页面 / 新流程</div>
+        <div class="mockup-body">
+          <div class="mock-nav">Dashboard | Subjects | <strong>Interpret</strong> | Settings</div>
+          <div style="display:flex; gap:12px; margin-top:12px;">
+            <div class="mock-content" style="flex:1;">
+              <div class="label">输入</div>
+              <div class="placeholder">出生信息（日期/时间/地点）</div>
+              <div class="placeholder">MBTI（可选）+ 其他测试（可选）</div>
+              <div class="placeholder">补充描述（自由文本）</div>
+              <button class="mock-button" style="margin-top:10px;">生成综合解读</button>
+            </div>
+            <div class="mock-content" style="flex:1;">
+              <div class="label">输出</div>
+              <div class="placeholder">整体画像</div>
+              <div class="placeholder">优势/盲点/建议</div>
+              <div class="placeholder">可追问对话</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. 独立页面</h3>
+      <p>最清晰的“产品形态”，适合后续做场景化对话与自反馈系统。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="subject-panel" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">复用 Subject（客户/对象）详情页</div>
+        <div class="mockup-body">
+          <div class="mock-nav">Subjects / Alice / Natal</div>
+          <div style="display:flex; gap:12px; margin-top:12px;">
+            <div class="mock-content" style="flex:1;">
+              <div class="label">星盘 + 现有功能</div>
+              <div class="placeholder">Natal / Transit / Timeline...</div>
+            </div>
+            <div class="mock-sidebar" style="width:38%;">
+              <div class="label">右侧面板</div>
+              <div class="placeholder">综合解读（可生成）</div>
+              <div class="placeholder">用户补充信息（MBTI 等）</div>
+              <div class="placeholder">记忆/画像片段</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Subject 右侧面板</h3>
+      <p>最大化复用现有“客户/对象+星盘”数据结构，和 Notes/AI 面板天然融合。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="dashboard-modal" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Dashboard 快捷入口（弹窗/向导）</div>
+        <div class="mockup-body">
+          <div class="mock-nav">Dashboard</div>
+          <div style="display:flex; gap:12px; margin-top:12px;">
+            <div class="mock-content" style="flex:1;">
+              <div class="label">快速开始</div>
+              <div class="placeholder">选择 Subject 或创建新 Subject</div>
+              <div class="placeholder">填 MBTI / 描述</div>
+              <button class="mock-button" style="margin-top:10px;">生成综合解读</button>
+            </div>
+            <div class="mock-content" style="flex:1;">
+              <div class="label">最近解读</div>
+              <div class="placeholder">列表 + 回看</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. Dashboard 快捷入口</h3>
+      <p>更“消费级”体验，适合新手；但后续和 Subject 深度绑定需要再做一次整合。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <p class="subtitle">看完后：在浏览器里点选一个选项，然后在对话里告诉我你选了哪个，以及原因（或你想混合/自定义）。</p>
+</div>
